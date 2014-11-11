@@ -1,7 +1,4 @@
 HGpython
 ======== 
 
-xc
-cxc
-xc
-xcxc=
+hello
