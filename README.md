@@ -7,4 +7,6 @@ xc
 xcxc
 
 
-Kolec tu byl=
+Kolec tu byl
+
+NANANAN
