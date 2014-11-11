@@ -4,4 +4,7 @@ HGpython
 xc
 cxc
 xc
-xcxc=
+xcxc
+
+
+Kolec tu byl=
