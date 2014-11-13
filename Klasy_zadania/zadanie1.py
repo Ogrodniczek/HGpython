@@ -4,7 +4,7 @@ class Produkt(object):
         self.aktualna_cena = 0
         self.aktualna_ilosc = 0
     def dodaj_ilosc(self, ilosc):
-        if ilosc == type(int):
+        if type(ilosc) == int:
             if ilosc > 0:
                 self.aktualna_ilosc = self.aktualna_ilosc + ilosc
             else:
@@ -12,7 +12,7 @@ class Produkt(object):
         else: 
             print('Podaj liczbe calkowita')
     def zmien_cene(self, nowa_cena):
-        if nowa_cena == type(float):
+        if type(nowa_cena) == float:
             self.aktualna_cena = nowa_cena
         else:
             print('zly format ceny')
@@ -27,4 +27,4 @@ class Produkt(object):
         else:
             print('brak odpowiedniej ilosci w magazynie')
     def sprawdz_aktualna_ilosc(self):
-        print('Aktualna ilosc = {}'.format(self.aktualna_ilosc))
+        print('Aktualna ilosc = {}'.format(str(self.aktualna_ilosc)))
