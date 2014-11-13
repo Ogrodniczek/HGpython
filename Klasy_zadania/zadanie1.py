@@ -12,10 +12,19 @@ class Produkt(object):
         else: 
             print('Podaj liczbe calkowita')
     def zmien_cene(self, nowa_cena):
-        self.aktualna_cena = nowa_cena
+        if nowa_cena == type(float):
+            self.aktualna_cena = nowa_cena
+        else:
+            print('zly format ceny')
     def sprzedaj_szuke(self):
-        self.aktualna_ilosc = self.aktualna_ilosc - 1
+        if self.aktualna_ilosc > 0:
+            self.aktualna_ilosc = self.aktualna_ilosc - 1
+        else:
+            print('brak w magazynie')
     def sprzedaj_sztuki(self, ilosc):
-        self.aktualna_ilosc = self.aktualna_ilosc - ilosc
+        if self.aktualna_ilosc >= ilosc:
+            self.aktualna_ilosc = self.aktualna_ilosc - ilosc
+        else:
+            print('brak odpowiedniej ilosci w magazynie')
     def sprawdz_aktualna_ilosc(self):
         print('Aktualna ilosc = {}'.format(self.aktualna_ilosc))
