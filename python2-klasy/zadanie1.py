@@ -34,14 +34,14 @@ class Produkt(object):
         print('Historia cen: ', self.historia_cen)
 
 #Przyklad uzycia
-#def przyklad():
-produkt1 = Produkt('zeszyt')
-produkt1.dodaj_ilosc(5)
-produkt1.zmien_cene(5.2)
-produkt1.zmien_cene(10.1)
-produkt1.sprzedaj_sztuke()
-produkt1.sprawdz_aktualna_ilosc()
-produkt1.pokaz_historie_cen()
-produkt1.sprawdz_srednia_cene()
+def przyklad():
+    produkt1 = Produkt('zeszyt')
+    produkt1.dodaj_ilosc(5)
+    produkt1.zmien_cene(5.2)
+    produkt1.zmien_cene(10.1)
+    produkt1.sprzedaj_sztuke()
+    produkt1.sprawdz_aktualna_ilosc()
+    produkt1.pokaz_historie_cen()
+    produkt1.sprawdz_srednia_cene()
 
 
