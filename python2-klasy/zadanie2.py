@@ -3,7 +3,7 @@ class Shop(object):
         self.nazwa_sklepu = nazwa_sklepu
         self.nazwa_produktu = ''
         self.aktualna_ilosc = 0
-
+        self.lista_produktow = []
     def dodaj_produkt(self, nazwa):
         self.nazwa_produktu = nazwa
 
@@ -28,12 +28,12 @@ class Shop(object):
             print('Nie ma takiego produktu')
 
 #przyklad
-
-produkt1 = Shop('Warzywniak')
-produkt1.dodaj_produkt('marchewka')
-produkt1.dodaj_ilosc('marchewka', 5)
-produkt1.sprzedaj_produkt('marchewka', 4)
-produkt1.aktualna_ilosc_produktu('marchewka')
+def przyklad():
+    sklep1 = Shop('Warzywniak')
+    sklep1.dodaj_produkt('marchewka')
+    sklep1.dodaj_ilosc('marchewka', 5)
+    sklep1.sprzedaj_produkt('marchewka', 4)
+    sklep1.aktualna_ilosc_produktu('marchewka')
 
 
 
