@@ -1,8 +1,6 @@
-x = raw_input('Podaj liczbe : '))
-if type(x) == int or type(x) == float:
-    if x >= 10.0:
-        print('Jestes zwyciezca')
-    else:
-        print('Umrzyj')
+print('Podaj liczbe : ')
+x = int(input())
+if x >= 10.0:
+    print('Jestes zwyciezca')
 else:
-    print(x, ' nie jest liczba')
+    print('Umrzyj')
