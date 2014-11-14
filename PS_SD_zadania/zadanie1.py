@@ -1,7 +1,9 @@
+"""Program sprawdza czy wprowadzna liczba calkowia jest wieksza lub rowna 10"""
+
 while True:
     try:
-        x = int(input('Podaj liczbe calkowita : '))
-        if x >= 10:
+        spr = int(input('Podaj liczbe calkowita : '))
+        if  spr >= 10:
             print('Jestes zwyciezca')
         else:
             print('umrzyj')
