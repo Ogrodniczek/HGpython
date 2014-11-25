@@ -1,0 +1,18 @@
+"""Program wypisuje uzytkownikow z systemu i ich domyslna powloke"""
+
+def lista_uzytkownikow():
+    """funkcja zwaraca uzytkowniko i powloke systemu w formie listy"""
+    tablica = []
+    handler =  open('/etc/passwd', 'r')
+    for users in handler:
+        tablica.append(users.split(":"))
+    n = 0
+    c = 1
+    while c <= len(tablica):
+        print(tablica[n][0], " : ", tablica[n][5])
+        n += 1
+        c += 1
+
+
+if __name__ == '__main__':
+    lista_uzytkownikow()
