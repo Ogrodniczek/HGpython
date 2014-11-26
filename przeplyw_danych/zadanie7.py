@@ -22,8 +22,8 @@ wartosc = int(input('Podaj wartosc:'))
 
 while wartosc != 0:
     test.dodaj_do_dodatnich(wartosc)
-    test.zamien_na_addytywne()
     wartosc = int(input('Podaj wartosc a zeby wyjsc wpisz 0:'))
 
+test.zamien_na_addytywne()
 print(test.liczby_dodatnie)
 print(test.liczby_addytywne)
