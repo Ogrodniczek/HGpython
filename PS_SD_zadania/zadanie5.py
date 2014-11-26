@@ -1,9 +1,11 @@
+# encoding: utf-8
 """Program wypisuje uzytkownikow z systemu i ich domyslna powloke"""
+
 
 def lista_uzytkownikow():
     """funkcja zwaraca uzytkowniko i powloke systemu w formie listy"""
     tablica = []
-    handler =  open('/etc/passwd', 'r')
+    handler = open('/etc/passwd', 'r')
     for users in handler:
         tablica.append(users.split(":"))
     n = 0
