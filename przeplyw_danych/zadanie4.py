@@ -1,5 +1,3 @@
-__author__ = 'Kordian'
-
 ''' Napisz funkcję f(L) która będzie wyszukiwała liczby addytywne (przeciwne).
 Funkcja ma przyjmować iterowalny zbiór liczb całkowitych jako parametr
 a zwrócić iterowalalny zbiór dodatnich liczb addytywnych.
