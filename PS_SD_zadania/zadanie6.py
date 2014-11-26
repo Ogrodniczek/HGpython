@@ -1,22 +1,21 @@
-"""Program zwraca liczby fibonacciego z przedzialu od 10 do 20"""
+"""Program returns fibonacci numbers in between 10 and 20"""
 
 
-def ciag_fibonacciego():
+def fibonacci_sequence():
 
-    """petla"""
+    """main loop"""
 
-    fib1 = 0
-    fib2 = 1
-    fib = 0
-    tfib = []
-    while fib <= 20:
-        fib = fib1 + fib2
-        fib1 = fib2
-        fib2 = fib
-        if 10 <= fib <= 20:
-            tfib.append(fib)
-    print(tfib)
+    fibonacci_1 = 0
+    fibonacci_2 = 1
+    fibonacci_list =[]
+    while fibonacci_2 <= 20:
+        fibonacci_sum = fibonacci_1 + fibonacci_2
+        fibonacci_1 = fibonacci_2
+        fibonacci_2 = fibonacci_sum
+        if 10 <= fibonacci_sum <= 20:
+            fibonacci_list.append(fibonacci_sum)
+    print(fibonacci_list)
 
 
 if __name__ == '__main__':
-    ciag_fibonacciego()
+    fibonacci_sequence()
