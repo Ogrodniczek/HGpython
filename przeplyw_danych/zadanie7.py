@@ -6,10 +6,8 @@ class Zadanie7(object):
         self.liczby_dodatnie = []
         self.liczby_addytywne = []
 
-    def dodaj_do_dodatnich(self):
-        while self.ilosc > 0:
-            self.liczby_dodatnie.append(int(input('Podaj liczbe dodatnia: ')))
-            self.ilosc -= 1
+    def dodaj_do_dodatnich(self, liczba):
+            self.liczby_dodatnie.append(liczba)
 
     def zamien_na_addytywne(self):
         for liczba_dodatnia in self.liczby_dodatnie:
@@ -23,4 +21,9 @@ test = Zadanie7()
 wartosc = int(input('Podaj wartosc:'))
 
 while wartosc != 0:
-    wartosc = input('Podaj wartosc a zeby wyjsc wpisz 0:')
+    test.dodaj_do_dodatnich(wartosc)
+    test.zamien_na_addytywne()
+    wartosc = int(input('Podaj wartosc a zeby wyjsc wpisz 0:'))
+
+print(test.liczby_dodatnie)
+print(test.liczby_addytywne)
