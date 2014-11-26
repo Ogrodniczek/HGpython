@@ -1,3 +1,4 @@
+# encoding: utf-8
 """Program returns fibonacci numbers in between 10 and 20"""
 
 
