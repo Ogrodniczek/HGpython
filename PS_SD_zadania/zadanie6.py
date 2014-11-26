@@ -13,7 +13,7 @@ def ciag_fibonacciego():
         fib = fib1 + fib2
         fib1 = fib2
         fib2 = fib
-        if fib >= 10 and fib <= 20:
+        if 10 <= fib <= 20:
             tfib.append(fib)
     print(tfib)
 
