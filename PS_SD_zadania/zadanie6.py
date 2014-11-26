@@ -7,7 +7,7 @@ def fibonacci_sequence():
 
     fibonacci_1 = 0
     fibonacci_2 = 1
-    fibonacci_list =[]
+    fibonacci_list = []
     while fibonacci_2 <= 20:
         fibonacci_sum = fibonacci_1 + fibonacci_2
         fibonacci_1 = fibonacci_2
