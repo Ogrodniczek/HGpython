@@ -7,11 +7,9 @@ def lista_uzytkownikow():
     for users in handler:
         tablica.append(users.split(":"))
     n = 0
-    c = 1
-    while c <= len(tablica):
+    while n+1 <= len(tablica):
         print(tablica[n][0], " : ", tablica[n][5])
         n += 1
-        c += 1
 
 
 if __name__ == '__main__':
