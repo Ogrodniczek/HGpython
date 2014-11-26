@@ -40,7 +40,6 @@ def kalkulator(liczba1, liczba2):
 
     if opcja != 0:
         switch(opcja, liczba1, liczba2)
-        del liczba1, liczba2
         
 
 def test():
