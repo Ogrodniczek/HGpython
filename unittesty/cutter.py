@@ -13,6 +13,5 @@ class Cutter(object):
         if self.characters == 2:
             self.tablica[0] = self.tablica[0][:2]
             self.tablica[1] = self.tablica[1][:2]
-            del self.tablica[3]
-            del self.tablica[2]
+            del self.tablica[2:4]
         return self.tablica
