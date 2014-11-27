@@ -16,7 +16,7 @@ three
 four'''
         self.assertEqual(['one', 'two', 'three', 'four'], cutter.cut(input_data))
 
-    unittest.skip('Not yet implemented')
+    #@unittest.skip('Not yet implemented')
     def test_cut_input_with_more_characters(self):
         cutter = Cutter(lines=5, characters=20)
         input_data = '''qwertyuiop
