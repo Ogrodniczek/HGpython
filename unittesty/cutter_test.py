@@ -34,7 +34,7 @@ three
 four'''
         self.assertEqual(['on', 'tw'], cutter.cut(input_data))
 
-    unittest.skip('Not yet implemented')
+    #@unittest.skip('Not yet implemented')
     def test_cut_more_data(self):
         cutter = Cutter(lines=2, characters=2)
         input_data = '''oneoneoneoneoneoneone
