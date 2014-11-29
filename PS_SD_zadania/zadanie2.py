@@ -9,5 +9,5 @@ if __name__ == '__main__':
                 break
             except ValueError:
                 print('Wprowadzona wartosc nie jest liczba')
-        suma = suma + liczba
+        suma += liczba
     print(suma)
