@@ -14,11 +14,10 @@ if __name__ == '__main__':
     for i in range(0, ilosc_liczb):
         while True:
             try:
-                liczba = int(input('Podaj liczbe nr ' + str(i+1) + ' : '))
+                tablica.append(int(input('Podaj liczbe nr ' + str(i+1) + ' : ')))
                 break
             except ValueError:
                 pass
-        tablica.append(liczba)
     for n in range(0, ilosc_liczb):
         odwrotna_liczba = - int(tablica[n])
         odwrotna_tablica.append(odwrotna_liczba)
