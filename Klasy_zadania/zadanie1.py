@@ -4,8 +4,6 @@
 
 class Product(object):
 
-    """main class"""
-
     def __init__(self, name):
         self.name = name
         self.actual_price = 0
@@ -14,7 +12,7 @@ class Product(object):
     def add_quantity(self, quantity):
         if type(quantity) == int:
             if quantity > 0:
-                self.actual_quantity = self.actual_quantity + quantity
+                self.actual_quantity += quantity
             else:
                 print('Podaj liczbe calkowita wieksza od 0')
         else: 
@@ -34,7 +32,7 @@ class Product(object):
 
     def sell_x_pieces(self, quantity):
         if self.actual_quantity >= quantity:
-            self.actual_quantity = self.actual_quantity - quantity
+            self.actual_quantity -= quantity
         else:
             print('brak odpowiedniej ilosci w magazynie')
 
