@@ -1,25 +1,30 @@
-"""Program wyszukuje liczbny addytywne"""
+# encoding: utf-8
+"""Additive inverse from list"""
 
-if __name__ == '__main__':
-    ilosc_liczb = int(0)
-    tablica = []
-    odwrotna_tablica = []
-    while ilosc_liczb <= 0:
+
+def additive_inverse():
+    """This module inverts numbers in list and prints original list along with inverted list
+
+    how_many_to_inverse: stores how many numbers will be inverted
+    numbers_to_inverse: list of numbers to inverse"""
+    how_many_to_inverse = int(0)
+    numbers_to_inverse = []
+    while how_many_to_inverse <= 0:
         while True:
             try:
-                ilosc_liczb = int(input('Podaj ilosc liczb : '))
+                how_many_to_inverse = int(input('How many to inverse : '))
                 break
             except ValueError:
                 pass
-    for i in range(0, ilosc_liczb):
+    for number_to_inverse in range(0, how_many_to_inverse):
         while True:
             try:
-                tablica.append(int(input('Podaj liczbe nr ' + str(i+1) + ' : ')))
+                numbers_to_inverse.append(int(input(str(number_to_inverse+1) + ' number to inverse : ')))
                 break
             except ValueError:
                 pass
-    for n in range(0, ilosc_liczb):
-        odwrotna_liczba = - int(tablica[n])
-        odwrotna_tablica.append(odwrotna_liczba)
-    for x in range(0, ilosc_liczb):
-        print(tablica[x], odwrotna_tablica[x])
+    for number_in_numbers_to_inverse in range(0, how_many_to_inverse):
+        print(numbers_to_inverse[number_in_numbers_to_inverse], - numbers_to_inverse[number_in_numbers_to_inverse])
+
+if __name__ == "__main__":
+    additive_inverse()
