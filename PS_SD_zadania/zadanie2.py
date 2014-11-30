@@ -5,9 +5,8 @@ if __name__ == '__main__':
     while suma <= 100:
         while True:
             try:
-                liczba =  float(input('Podaj liczbe : '))
+                suma += float(input('Podaj liczbe : '))
                 break
             except ValueError:
                 print('Wprowadzona wartosc nie jest liczba')
-        suma += liczba
     print(suma)
