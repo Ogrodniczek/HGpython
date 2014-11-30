@@ -7,7 +7,7 @@ def additive_inverse():
 
     how_many_to_inverse: stores how many numbers will be inverted
     numbers_to_inverse: list of numbers to inverse"""
-    how_many_to_inverse = int(0)
+    how_many_to_inverse = int()
     numbers_to_inverse = []
     while how_many_to_inverse <= 0:
         while True:
